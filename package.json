@@ -1,0 +1,17 @@
+{
+  "name": "echarts-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "echarts": "^5.4.3",
+    "jsdom": "^23.0.1"
+  }
+}
