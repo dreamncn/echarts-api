@@ -19,7 +19,7 @@ const renderChart = (res,data)=>{
             const fn = new Function(`return ${data}`);
             json = fn();
         } catch (e) {
-            res.writeHead(500, {'Content-Type': 'text/plain'});
+            res.writeHead(403, {'Content-Type': 'text/plain'});
             res.end('JSON Error:'+ e.toString());
             return ;
         }
@@ -48,7 +48,7 @@ const renderChart = (res,data)=>{
        svgStr = chart.renderToSVGString();
        chart.dispose();
    }catch (e) {
-       res.writeHead(500, {'Content-Type': 'text/plain'});
+       res.writeHead(403, {'Content-Type': 'text/plain'});
        res.end('Echarts Error:'+ e.toString());
        return ;
    }
@@ -72,8 +72,6 @@ const requestHandler = (req, res) => {
         });
         req.on('end', () => {
             renderChart(res,body)
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end(`POST request received with body: ${body}`);
         });
     } else {
         res.writeHead(405);
