@@ -32,6 +32,7 @@ const renderChart = (res,data)=>{
     let theme = json.theme || '';
     let width = json.width || 600;
     let height = json.height || 400;
+    let output = json.output || 'base64';
 
     let  svgStr = '';
 
