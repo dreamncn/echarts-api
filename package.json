@@ -4,14 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.11.2",
+    "decimal.js": "^10.4.3",
     "echarts": "^5.4.3",
     "jsdom": "^23.0.1"
+  },
+  "devDependencies": {
+    "node-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
