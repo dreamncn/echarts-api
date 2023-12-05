@@ -8,6 +8,9 @@ dependencies:
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
+  decimal.js:
+    specifier: ^10.4.3
+    version: 10.4.3
   echarts:
     specifier: ^5.4.3
     version: 5.4.3
